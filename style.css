@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #e5f1fa;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    height: 3.5rem;
+    background-color: #01192c;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  } 
+  .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name-logo{
+    height: 2rem;
+    width:2rem
+  }  
+  .myname{
+    color:whitesmoke
+  } 
+  header h3 {  
+    font-size: 2rem;
+    color: #DFF6FF;
+    text-align: center;
+    margin-top: 0.5rem;
+    position: relative;   
+  }
+  .container {
+    position: absolute;
+    width: 90%;
+    max-width: 40rem;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.8em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .input-colors {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #01192c;
+    font-weight: bold;
+  }
+  .input-colors span {
+    color:#d00000;
+  }
+  .color-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+  }
+  .inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.3rem;
+    border: 0.1rem solid #01192c;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin: 0.3rem;
+    border-radius: 10px;
+  }
+  #text-text{
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+  }
+  #bg-text{
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+  }
+  input[type="color"] {
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 0.5em;
+    border: 0.2rem solid #a1a1a1;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  input[type="color"]:-moz-color-swatch {
+    border-radius: 0.5em;
+    border: 0.2rem solid #a1a1a1;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .result {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #preview {
+    padding: 1rem;
+    width: 40rem;
+    margin-top: 3rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  #contrast {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  #rating {
+    text-align: center;
+    padding: 0.8rem 0;
+    border-radius: 0.5rem;
+    width: 15rem;
+    font-size: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .footer {
+    min-height: auto;
+    padding-top: 0;
+    background: #01192c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .footer .credit {
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #F5F5F5; 
+  }
+  .footer .credit a {
+    color: #9A36B2;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    header{
+      height: 2.5rem;
+    }
+    header h3 {  
+      font-size: 1rem;
+      padding-top: 0.2rem;
+    }
+    .name-logo{
+      height: 1.5rem;
+      width:1.5rem
+    } 
+    .input-colors {
+      display: flex;
+     flex-direction: column;
+    }
+    input[type="color"] {
+      width: 8rem;
+      height: 5rem;
+    }
+    .container {
+      font-size: 0.9em;
+    }
+    #preview {
+      width: 20rem;
+      margin-top: 0.5rem;
+      line-height: 1rem;
+       font-size: 0.8rem;
+    }
+    input[type="color"] {
+      font-size: 0.8em;
+    }
+    .footer .credit {
+      text-align: center;
+      font-size: 0.7rem;
+    }
+    #contrast {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    #rating {
+      font-size: 1.5rem;
+    }
+  }

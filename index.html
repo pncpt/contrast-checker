@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Contrast Checker</title>
+    <link rel="icon" type="image/x-icon" href="icon.png" />   
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+    <!-- Header -->
+  <header>  
+    <div class="name" id="name">
+      <img class="name-logo" src="icon.png" alt="">        
+        <h3 class="myname">&nbsp;Color Contrast Checker</h3> 
+    </div>
+  </header>
+
+  <!-- Body -->
+  <body id="body">
+    <br> <br>
+    <div class="main">
+    <div class="container">
+      <div class="input-colors">
+        <div class="color-container">
+          <label for="text-color">Text <span>Color:</span></label>
+          <div class="inputs">
+          <input type="text"  id="text-text" placeholder="#000000" required/>
+          <input type="color" id="text-color" value="#000000" />
+          </div>
+        </div>
+        <div class="color-container">
+          <label for="bg-color">Background <span>Color :</span></label>
+          <div class="inputs">
+          <input type="text" id="bg-text" placeholder="#000000" required/>
+          <input type="color" id="bg-color" value="#ffffff" />
+         </div>
+      </div>
+      </div>
+      <br> <br>
+      <div class="result">    
+        <p id="contrast">1</p>
+        <p id="rating">Demo Text</p>
+      </div>
+    </div>
+
+    <div id="preview">
+      “It always seems impossible until it's done.”  
+    </div>
+  </div>
+
+     <!-- Footer -->
+    <section class="footer" id="footer">  
+      <h1 class="credit">Designed by <a href="https://www.linkedin.com/in/"> Praveen Nishanth</a></h1>  
+    </section>
+    
+    <!-- Script -->
+    <script src="main.js"></script>
+  </body>
+</html>
